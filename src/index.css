@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Inter;
+  src: url('./assets/InterVariable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./assets/CormorantGaramond.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  color-scheme: light;
+  --page: #faf9f6;
+  --surface: #fff;
+  --text: #252d28;
+  --muted: #747a73;
+  --line: #dddfd8;
+  --accent: #24664b;
+  --soft: #edf2ea;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  background: var(--page);
+  color: var(--text);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #141917;
+  --surface: #1d2420;
+  --text: #f0f1e9;
+  --muted: #a6b0a8;
+  --line: #39463c;
+  --accent: #8ac5a3;
+  --soft: #283d30;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex='0']:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--page);
+}
