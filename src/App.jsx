@@ -408,7 +408,7 @@ function Home() {
             <p className="hero-summary">Building <em>thoughtful</em> software. Exploring what AI can do for the <strong>real world</strong>.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">View projects <ArrowIcon /></a>
-              <a className="button button-secondary" href={`mailto:${EMAIL}?subject=Resume%20request`}>Request résumé <ArrowIcon /></a>
+              <a className="button button-secondary" href="/Mussayib_Kachi_Resume.pdf"  target="_blank" rel="noopener noreferrer">  View résumé <ArrowIcon /></a>
             </div>
             <div className="social-links">
               <SocialLink href="https://github.com/mussayib87" label="GitHub">
